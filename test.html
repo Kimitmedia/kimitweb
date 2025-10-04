@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="assets\small logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimit Media</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+      <!-- Language Switch Button -->
+<a href="test-ar.html" class="lang-switch">AR</a>
+
+        <div class="left-section">
+            <div class="background-image">
+               <img src="../assets/background.png" alt="">
+            </div>
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="assets\kimit new logo full.png" alt="Kimit Media Logo">
+                </div>
+                   <div class="company-info"> 
+                    <h1 class="company-title">Kimit Media</h1>
+                    <div class="email">1kimtmedia1@gmail.com</div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="right-section">
+            <div class="nav-row">
+              <div class="nav-icon"><img src="../assets/Vector.svg" alt="Instagram"></div>
+              <a 7 id="aboutBtn" class="nav-button">
+                <span class="nav-text">About Us</span>
+              </a>
+              
+            <div id="popup" class="popup">
+  <div class="popup-content">
+    <h2>About Us</h2>
+    <br>
+    <p>
+      Company Brief – [Your Company Name]
+
+[Your Company Name] is a startup marketing agency dedicated to helping small and emerging brands grow through smart and creative digital marketing solutions.
+
+Our Services:
+
+Social media management (content creation – design – paid campaigns)
+
+Online advertising across multiple platforms
+
+Branding and visual identity design
+
+Creative ad campaigns
+
+Content marketing
+
+
+Our Vision:
+To become the go-to marketing partner for small and medium businesses, helping them build a strong and impactful digital presence.
+
+Our Mission:
+We deliver tailored, result-driven marketing strategies that combine creativity and practicality to achieve sustainable growth for every client.
+
+
+    </p>
+  </div>
+</div>
+            </div>
+          
+            <div class="nav-row">
+              <div class="nav-icon"><img src="../assets/Vector-1.svg" alt="Instagram"></div>
+              <a href="https://www.facebook.com/share/1B46MDHVVU/?mibextid=wwXIfr" class="nav-button">
+                <span class="nav-text">Facebook</span>
+              </a>
+            </div>
+          
+            <div class="nav-row">
+              <div class="nav-icon"> <img src="../assets/Vector-2.svg" alt="Instagram"></div>
+              <a href="https://www.instagram.com/kimtmedia1?igsh=NGFmY2h6eWNrcWI1" class="nav-button">
+                <span class="nav-text">Instagram</span>
+              </a>
+            </div>
+          
+            <div class="nav-row">
+              <div class="nav-icon"><img src="assets\tik tok.svg" alt="Instagram"></div>
+              <a href="#vision" class="nav-button">
+                <span class="nav-text">Tik Tok</span>
+              </a>
+            </div>
+          </div>
+          
+    </div>
+    <script>
+           const aboutBtn = document.getElementById("aboutBtn");
+const popup = document.getElementById("popup");
+
+// فتح البوب أب عند الضغط على About Us
+aboutBtn.addEventListener("click", function(e) {
+  e.preventDefault();
+  popup.style.display = "flex";
+});
+
+// قفل البوب أب لما تدوس برا الرسالة
+window.addEventListener("click", function(e) {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+});
+
+    </script>
+</body>
+</html>

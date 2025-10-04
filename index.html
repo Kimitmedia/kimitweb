@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimit Media</title>
+  <meta name="description" content="Kimit Media Website">
+</head>
+<body>
+
+<!-- صفحة التحويل بين نسخة الويب و نسخة الموبايل -->
+<script>
+  // لو عرض الشاشة أقل من أو يساوي 768 → نسخة الموبايل
+  // لو أكبر → نسخة الويب
+  if (window.innerWidth <= 768) {
+    window.location.href = "mobile.html";  // اسم ملف نسخة الموبايل
+  } else {
+    window.location.href = "test.html";     // اسم ملف نسخة الويب
+  }
+</script>
+
+<!-- ممكن تحط هنا رسالة بسيطة للناس اللي مفعلين جافا سكريبت -->
+<noscript>
+  <p style="text-align:center; margin-top:50px; font-family:Arial; font-size:18px;">
+    من فضلك فعّل الجافاسكربت في المتصفح علشان الموقع يشتغل
+  </p>
+</noscript>
+
+</body>
+</html>
